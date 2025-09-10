@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: github context
         env:
-          GitHubContext: ${{toJSON(github)}}
-          run: echo "$GitHubContext"
+           GitHubContext: ${{toJSON(github)}}
+           run: echo "$GitHubContext"
       - name: Output for job 1
         run: echo "job1 running, are we running job 3 , ${{ github.event.inputs.run-job-3 }}"
       - name: step 2
