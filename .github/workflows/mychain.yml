@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: Output for job 1
         run: echo "job1 running, are we running job 3 , ${{ github.event.inputs.run-job-3 }}"
+      - name: step 2
+        run: echo "i didi it"
+        
 
   job-2:
      name: job2
