@@ -1,4 +1,4 @@
-name: mychain
+name: mychaindfasd
 
 on:
   workflow_dispatch:
