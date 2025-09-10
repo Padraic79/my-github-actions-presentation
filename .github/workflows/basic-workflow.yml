@@ -26,6 +26,8 @@ on:
           - New York
           - Seattle
           - Tupelo
+          - Dublin
+          - Carlow
       fav-color-blue:
         description: "Is your favorite color blue"
         required: true
