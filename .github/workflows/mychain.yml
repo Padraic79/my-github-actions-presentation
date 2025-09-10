@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output for job 1
-        run: echo `job1 running, are we running job 3 , ${{ github.event.inputs.run-job-3 }}`
+        run: echo "job1 running, are we running job 3 , ${{ github.event.inputs.run-job-3 }}"
 
   job-2:
      name: job2
@@ -26,7 +26,7 @@ jobs:
 
   job-3: 
      name: job3
-     if: github.events.input.run-job-3 == true
+     if: ${{ github.event.inputs.run-job-3 == 'true' }}
      runs-on: ubuntu-latest
      steps:
        - name: output for job 3
